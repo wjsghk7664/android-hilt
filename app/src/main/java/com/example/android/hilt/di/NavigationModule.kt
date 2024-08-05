@@ -12,5 +12,5 @@ import dagger.hilt.android.components.ActivityComponent
 abstract class NavigationModule{
 
     @Binds
-    abstract fun bindNavigator(imple:AppNavigatorImpl):AppNavigator
+    abstract fun bindNavigator(impl: AppNavigatorImpl):AppNavigator
 }

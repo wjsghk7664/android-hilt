@@ -25,18 +25,21 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.example.android.hilt.LogApplication
 import com.example.android.hilt.R
-import com.example.android.hilt.data.LoggerDataSource
-import com.example.android.hilt.data.LoggerLocalDataSource
 import com.example.android.hilt.navigator.AppNavigator
 import com.example.android.hilt.navigator.Screens
+import dagger.hilt.android.AndroidEntryPoint
 
 /**
  * Fragment that displays buttons whose interactions are recorded.
  */
+
+@AndroidEntryPoint
 class ButtonsFragment : Fragment() {
+/*
 
     private lateinit var logger: LoggerDataSource
     private lateinit var navigator: AppNavigator
+*/
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -53,7 +56,7 @@ class ButtonsFragment : Fragment() {
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        view.findViewById<Button>(R.id.button1).setOnClickListener {
+        /*view.findViewById<Button>(R.id.button1).setOnClickListener {
             logger.addLog("Interaction with 'Button 1'")
         }
 
@@ -71,6 +74,6 @@ class ButtonsFragment : Fragment() {
 
         view.findViewById<Button>(R.id.delete_logs).setOnClickListener {
             logger.removeLogs()
-        }
+        }*/
     }
 }
